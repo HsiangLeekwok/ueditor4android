@@ -83,13 +83,25 @@ _UEditor.superscript = function () {
 }
 
 // 添加引用
-_UEditor.blockQuote = function () {
-    _UEditor.execCommand("blockquote");
+_UEditor.blockquote = function () {
+    _UEditor.execCommand("blockquote", {
+        style: "color: gray; font-style: italic; margin: 5px 2px 2px 2px; padding: 10px 2px 2px 2px; border-left: 4px solid #ccc; background-color: #f1f1f1;"
+    });
 }
 
-// 段落对齐方式：left => 居左，right => 居右，center => 居中，justify => 两端对齐
-_UEditor.justify = function (align) {
-    _UEditor.execCommand("justify", align);
+// 段落左对齐
+_UEditor.justifyLeft = function () {
+    _UEditor.execCommand("justifyleft");
+}
+
+// 段落居中对齐
+_UEditor.justifyCenter = function () {
+    _UEditor.execCommand("justifycenter");
+}
+
+// 段落左对齐
+_UEditor.justifyRight = function () {
+    _UEditor.execCommand("justifyright");
 }
 
 // 设置或取消删除线

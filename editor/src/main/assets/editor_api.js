@@ -16,6 +16,7 @@
             'core/node.js',
             'core/htmlparser.js',
             'core/filternode.js',
+			'plugins/blockquote.js',
             'plugins/inserthtml.js',
             'plugins/image.js',
             'plugins/justify.js',

@@ -44,7 +44,7 @@ public class UEditor extends WebView {
     public UEditor(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         getSettings().setDomStorageEnabled(true);
-        setVerticalScrollBarEnabled(false);
+        setVerticalScrollBarEnabled(true);
         setHorizontalScrollBarEnabled(false);
         if (!isInEditMode()) {
             getSettings().setJavaScriptEnabled(true);
@@ -179,51 +179,52 @@ public class UEditor extends WebView {
     }
 
     /**
-     * 设置文字对齐方式
+     * 设置文字左对齐
      */
-    public void align(@AlignType int alignType) {
-        switch (alignType) {
-            case ALIGN_LEFT:
-                exec("javascript:_UEditor.justify('left');");
-                break;
-            case ALIGN_CENTER:
-                exec("javascript:_UEditor.justify('center');");
-                break;
-            case ALIGN_RIGHT:
-                exec("javascript:_UEditor.justify('right');");
-                break;
-            default:
-                exec("javascript:_UEditor.justify('left');");
-                break;
-        }
+    public void alignLeft() {
+        exec("javascript:_UEditor.justifyLeft();");
+    }
+
+    /**
+     * 设置文字居中对齐
+     */
+    public void alignCenter() {
+        exec("javascript:_UEditor.justifyCenter();");
+    }
+
+    /**
+     * 设置文字右对齐
+     */
+    public void alignRight() {
+        exec("javascript:_UEditor.justifyRight();");
     }
 
     /**
      * 插入图片
      */
     public void insertImage(String imageUrl) {
-        exec("javascript:_UEditor.justify('" + imageUrl + "');");
+        exec("javascript:_UEditor.insertImage('" + imageUrl + "');");
     }
 
     /**
      * 插入html代码
      */
     public void insertHtml(String html) {
-        exec("javascript:_UEditor.justify('" + html + "');");
+        exec("javascript:_UEditor.insertHtml('" + html + "');");
     }
 
     /**
      * 插入音频
      */
     public void insertMusic(String musicUrl) {
-        exec("javascript:_UEditor.justify('" + musicUrl + "');");
+        exec("javascript:_UEditor.insertMusic('" + musicUrl + "');");
     }
 
     /**
      * 插入视频
      */
     public void insertVideo(String videoUrl) {
-        exec("javascript:_UEditor.justify('" + videoUrl + "');");
+        exec("javascript:_UEditor.insertVideo('" + videoUrl + "');");
     }
 
     /**
