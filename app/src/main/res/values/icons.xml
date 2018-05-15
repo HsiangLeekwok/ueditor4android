@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn_icon_undo">&#xE166;</string>
+    <string name="btn_icon_redo">&#xE15a;</string>
+    <string name="btn_icon_preview">&#xE8B6;</string>
+    <string name="btn_icon_bold">&#xE238;</string>
+    <string name="btn_icon_italic">&#xE23F;</string>
+    <string name="btn_icon_under_line">&#xE249;</string>
+    <string name="btn_icon_strike_through">&#xE246;</string>
+    <string name="btn_icon_horizontal_line">&#xE22C;</string>
+    <string name="btn_icon_superscript">&#xE0B2;</string>
+    <string name="btn_icon_subscript">&#xE22C;</string>
+    <string name="btn_icon_block_quote">&#xE244;</string>
+    <string name="btn_icon_unordered_list">&#xE241;</string>
+    <string name="btn_icon_ordered_list">&#xE242;</string>
+    <string name="btn_icon_justify_left">&#xE236;</string>
+    <string name="btn_icon_justify_center">&#xE234;</string>
+    <string name="btn_icon_justify_right">&#xE237;</string>
+    <string name="btn_icon_insert_image">&#xE3F4;</string>
+    <string name="btn_icon_insert_html">&#xE86f;</string>
+    <string name="btn_icon_insert_audio">&#xE3A1;</string>
+    <string name="btn_icon_insert_video">&#xE04B;</string>
+</resources>

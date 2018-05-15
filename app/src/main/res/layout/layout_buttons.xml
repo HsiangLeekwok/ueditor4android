@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/ui_editor_icon_margin">
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_undo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_undo"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_redo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_redo"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_preview"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size"
+        android:visibility="gone" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_bold"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_italic"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_under_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_under_line"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_strike_through"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_strike_through"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_horizontal_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_horizontal_line"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_superscript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_superscript"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_subscript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:rotation="90"
+        android:text="@string/btn_icon_superscript"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_block_quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_block_quote"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_unordered_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_unordered_list"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_ordered_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_ordered_list"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_justify_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_justify_left"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_justify_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_justify_center"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_justify_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_justify_right"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_insert_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_insert_image"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_insert_html"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_insert_html"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_insert_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_insert_audio"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
+        android:id="@+id/btn_insert_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_click_background"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="@string/btn_icon_insert_video"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+</LinearLayout>

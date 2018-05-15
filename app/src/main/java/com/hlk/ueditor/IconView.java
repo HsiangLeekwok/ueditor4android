@@ -15,19 +15,19 @@ import android.util.AttributeSet;
  * <b>修改人员：</b><br />
  * <b>修改备注：</b><br />
  */
-public class IconTextView extends AppCompatTextView {
+public class IconView extends AppCompatTextView {
 
-    public IconTextView(Context context) {
+    public IconView(Context context) {
         super(context);
         resetTypeface(context);
     }
 
-    public IconTextView(Context context, AttributeSet attrs) {
+    public IconView(Context context, AttributeSet attrs) {
         super(context, attrs);
         resetTypeface(context);
     }
 
-    public IconTextView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public IconView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         resetTypeface(context);
     }

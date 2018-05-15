@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="ui_editor_icon_size">28sp</dimen>
+    <dimen name="ui_editor_icon_size">32sp</dimen>
     <dimen name="ui_editor_icon_padding">5dp</dimen>
     <dimen name="ui_editor_icon_margin">2dp</dimen>
 </resources>

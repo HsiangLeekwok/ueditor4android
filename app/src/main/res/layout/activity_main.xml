@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,6 +11,7 @@
         android:orientation="vertical">
 
         <com.hlk.lib.android.ueditor.UEditor
+            android:id="@+id/ueditor"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1" />
@@ -20,185 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/ui_editor_icon_margin"
-                android:layout_marginStart="@dimen/ui_editor_icon_margin"
-                android:layout_marginTop="@dimen/ui_editor_icon_margin"
-                android:orientation="horizontal">
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE166;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE15a;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE8B6;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE238;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE23F;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE246;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE22C;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE244;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE241;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE242;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE236;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE234;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE237;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE3F4;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE86f;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE3A1;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-                <com.hlk.ueditor.IconTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/ui_editor_icon_margin"
-                    android:background="@color/colorIconBackground"
-                    android:padding="@dimen/ui_editor_icon_padding"
-                    android:text="&#xE04B;"
-                    android:textColor="@color/colorTextColor"
-                    android:textSize="@dimen/ui_editor_icon_size" />
-
-            </LinearLayout>
+            <include layout="@layout/layout_buttons" />
 
         </HorizontalScrollView>
     </LinearLayout>
