@@ -2,6 +2,7 @@ package com.hlk.ueditor;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.hlk.lib.android.ueditor.UEditor;
@@ -21,9 +22,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        uEditor.setOnContentFetchingListener(new UEditor.OnContentFetchingListener() {
+            @Override
+            public void onContentFetched(String content) {
+                Log.e("UEditor", content);
+            }
+        });
     }
 
-    @OnClick({R.id.btn_block_quote,
+    @OnClick({R.id.btn_get,
+            R.id.btn_block_quote,
             R.id.btn_bold,
             R.id.btn_horizontal_line,
             R.id.btn_insert_image,
@@ -51,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
             R.id.btn_strike_through})
     void buttonClick(View view) {
         switch (view.getId()) {
+            case R.id.btn_get:
+                uEditor.getContent();
+                break;
             case R.id.btn_undo:
                 uEditor.undo();
                 break;

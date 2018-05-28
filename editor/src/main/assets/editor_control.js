@@ -18,12 +18,12 @@ _UEditor.ready(function () {
 });
 
 // 设置编辑器获取焦点
-_UEditor.focus = function () {
+_UEditor.setFocus = function () {
     _UEditor.focus();
 }
 
 // 设置编辑器取消焦点
-_UEditor.blur = function () {
+_UEditor.setBlur = function () {
     _UEditor.blur();
 }
 
@@ -33,12 +33,12 @@ _UEditor.setEnable = function () {
 }
 
 // 设置编辑区不可用
-_UEditor.setDisabled = function () {
+_UEditor.setDisable = function () {
     _UEditor.setDisabled();
 }
 
 // 获取编辑器中的html内容
-_UEditor.getContent = function () {
+_UEditor.getHtmlContent = function () {
     return _UEditor.getContent();
 }
 

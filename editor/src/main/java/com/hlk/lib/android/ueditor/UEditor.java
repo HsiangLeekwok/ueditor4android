@@ -61,7 +61,7 @@ public class UEditor extends WebView {
         if (enable) {
             exec("javascript:_UEditor.setEnable();");
         } else {
-            exec("javascript:_UEditor.setDisabled();");
+            exec("javascript:_UEditor.setDisable();");
         }
     }
 
@@ -69,14 +69,14 @@ public class UEditor extends WebView {
      * 设置编辑器获取焦点
      */
     public void setFocus() {
-        exec("javascript:_UEditor.focus();");
+        exec("javascript:_UEditor.setFocus();");
     }
 
     /**
      * 取消焦点
      */
     public void clearFocus() {
-        exec("javascript:_UEditor.blur();");
+        exec("javascript:_UEditor.setBlur();");
     }
 
     /**
@@ -240,14 +240,16 @@ public class UEditor extends WebView {
      */
     public void getContent() {
         if (biggerThanKitkat()) {
-            exec("javascript:_UEditor.getContent();", new ValueCallback<String>() {
+            exec("javascript:_UEditor.getHtmlContent();", new ValueCallback<String>() {
                 @Override
                 public void onReceiveValue(String value) {
-
+                    if (null != onContentFetchingListener) {
+                        onContentFetchingListener.onContentFetched("content:" + value);
+                    }
                 }
             });
         } else {
-            exec("javascript:alert('content:' + _UEditor.getContent())");
+            exec("javascript:alert('content:' + _UEditor.getHtmlContent())");
         }
     }
 

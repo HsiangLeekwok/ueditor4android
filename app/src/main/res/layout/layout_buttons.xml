@@ -6,6 +6,18 @@
     android:padding="@dimen/ui_editor_icon_margin">
 
     <com.hlk.ueditor.IconView
+        android:id="@+id/btn_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ui_editor_icon_margin"
+        android:background="@drawable/ripple_click_background"
+        android:gravity="center"
+        android:padding="@dimen/ui_editor_icon_padding"
+        android:text="G"
+        android:textColor="@color/colorTextColor"
+        android:textSize="@dimen/ui_editor_icon_size" />
+
+    <com.hlk.ueditor.IconView
         android:id="@+id/btn_undo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
