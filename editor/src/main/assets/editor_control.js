@@ -89,6 +89,36 @@ _UEditor.blockquote = function () {
     });
 }
 
+// 设置H1标题头
+_UEditor.paragraphH1 = function() {
+    _UEditor.execCommand("paragraph", "h1");
+}
+
+// 设置H2标题头
+_UEditor.paragraphH2 = function() {
+    _UEditor.execCommand("paragraph", "h2");
+}
+
+// 设置H3标题头
+_UEditor.paragraphH3 = function() {
+    _UEditor.execCommand("paragraph", "h3");
+}
+
+// 设置H4标题头
+_UEditor.paragraphH4 = function() {
+    _UEditor.execCommand("paragraph", "h4");
+}
+
+// 设置H5标题头
+_UEditor.paragraphH5 = function() {
+    _UEditor.execCommand("paragraph", "h5");
+}
+
+// 设置H6标题头
+_UEditor.paragraphH6 = function() {
+    _UEditor.execCommand("paragraph", "h6");
+}
+
 // 段落左对齐
 _UEditor.justifyLeft = function () {
     _UEditor.execCommand("justifyleft");
@@ -122,7 +152,8 @@ _UEditor.horizontalLine = function () {
 // 插入图片
 _UEditor.insertImage = function (imageUrl) {
     _UEditor.execCommand("insertimage", {
-        src: imageUrl
+        src: imageUrl,
+        width: "100%"
     });
 }
 

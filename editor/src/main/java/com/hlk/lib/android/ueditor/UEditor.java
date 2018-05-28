@@ -165,6 +165,14 @@ public class UEditor extends WebView {
     }
 
     /**
+     * 设置H1-H6标题样式
+     */
+    public void headline(int size) {
+        exec("javascript:_UEditor.paragraphH" + size + "();");
+        insertHtml("<p></p>");
+    }
+
+    /**
      * 插入有序列表
      */
     public void orderedList() {

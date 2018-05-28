@@ -37,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
             R.id.btn_justify_center,
             R.id.btn_justify_left,
             R.id.btn_justify_right,
+            R.id.btn_headline_1,
+            R.id.btn_headline_2,
+            R.id.btn_headline_3,
+            R.id.btn_headline_4,
+            R.id.btn_headline_5,
+            R.id.btn_headline_6,
             R.id.btn_ordered_list,
             R.id.btn_unordered_list,
             R.id.btn_preview,
@@ -93,8 +99,26 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_justify_right:
                 uEditor.alignRight();
                 break;
+            case R.id.btn_headline_1:
+                uEditor.headline(1);
+                break;
+            case R.id.btn_headline_2:
+                uEditor.headline(2);
+                break;
+            case R.id.btn_headline_3:
+                uEditor.headline(3);
+                break;
+            case R.id.btn_headline_4:
+                uEditor.headline(4);
+                break;
+            case R.id.btn_headline_5:
+                uEditor.headline(5);
+                break;
+            case R.id.btn_headline_6:
+                uEditor.headline(6);
+                break;
             case R.id.btn_insert_image:
-                uEditor.insertImage("https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo_top_ca79a146.png");
+                uEditor.insertImage("http://www.x6img.com/u/20180526/20044734.jpg");
                 break;
             case R.id.btn_insert_html:
                 uEditor.insertHtml("<p><font color=\"#00FF00\">插入HTML带颜色</font></p>");
